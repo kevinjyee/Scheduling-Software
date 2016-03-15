@@ -1,0 +1,12 @@
+function PremiumMembership(){
+showURL("kevjyee@gmail.com");
+}
+//
+function showURL(href){
+  var app = UiApp.createApplication().setHeight(50).setWidth(200);
+  app.setTitle("Contact:");
+  var link = app.createAnchor('Email', href).setId("link");
+  app.add(link);  
+  var doc = SpreadsheetApp.getActive();
+  doc.show(app);
+  }

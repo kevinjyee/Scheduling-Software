@@ -1,0 +1,32 @@
+
+
+Type in your run number to start scheduling! 
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<form id="myForm">
+Run Number: <input type="text" name = "number">
+<input type="button" value="Submit" onmouseup="writeData()">
+</form>
+
+<script>
+  window.writeData = function() {
+    var formObj = document.getElementById('myForm');
+
+    google.script.run.myServerFunctionName(formObj);
+  };
+</script>
+
+
+<br>
+<br>
+If you need any help feel free to contact me:
+<input type="button" value="Contact" onclick=" google.script.run.PremiumMembership();" />
